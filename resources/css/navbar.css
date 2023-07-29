@@ -1,0 +1,195 @@
+
+.nav-custom{
+    height: 80px;  
+    background-color: white;
+}
+
+.img-custom{
+  width: 180px;
+  margin-left: 30px;
+}
+@media screen and (max-width: 992px) {
+  .img-custom {
+    width: 100px;
+  }
+  .navbar-collapse{
+    background-color: white;
+
+  }
+  .search-custom{
+    width: 100px;
+    height: 43px !important;
+   }
+   .button-57{
+    width: 5px;
+    height: 5px;
+   }
+   .profile-m-custom{
+    margin-left: 2px !important;
+   }
+}
+
+.navImg{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.navImg:hover {
+  border: 1px solid #284b63;
+}
+
+.color-custom{
+  color: var(--grey);
+  font-weight: 1000;
+}
+
+.search-custom{
+ width: 150px;
+ border-radius: 15px;
+ height:58px;
+}
+
+/* bottoni login e registrati */
+.button-48 {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 0;
+  box-sizing: border-box;
+  color: var(--blue);
+  cursor: pointer;
+  display: inline-block;
+ 
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 24px 35px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color:var(--blue); 
+  
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+ 
+
+}
+
+.button-48:after {
+  background-color: #FFFFFF;
+
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+  
+}
+
+.button-48:hover {
+color: white !important;
+  
+}
+
+
+
+/* bottone cerca */
+
+.button-57 {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  color: var(--blue);
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 20px 40px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  
+}
+
+.button-57 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button-57 span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.button-57:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blue);
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.button-57:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
